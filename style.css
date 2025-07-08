@@ -96,8 +96,15 @@ fieldset p {
     color: white;
     cursor: pointer;
     box-shadow: 5px 5px 10px black;
-    transition: 0.15s;
+    transition: all 0.15s ease;
 }
+
+#submit-btn:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 5px black;
+    background-color: darkgreen;
+}
+
 
 .submit-section {
     display: flex;
