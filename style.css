@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.background-image {
+    width: 45%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo-image {
+    background-color: transparent;
+    width: 50px;
+    height: auto;
+}
+
+.logo {
+    width: 45%;
+    background-color: lightblue;
+    opacity: 50%;
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
