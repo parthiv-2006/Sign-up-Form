@@ -7,12 +7,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-image">
-        <img src="annie-spratt-03SU9tzAHvY-unsplash.jpg" alt="image of the beach with people">
-        <div class="logo">
-            <img src="vacations.webp" alt="logo">
-            <h1>Vacations Co</h1>
+    <div class="container">
+        <div class="side-bar">
+            <img class="background-image" src="assets/annie-spratt-03SU9tzAHvY-unsplash.jpg" alt="image of the beach with people">
+            <div class="logo">
+                <h1><img class="logo-image" src="assets/pngtree-summer-coast-vacation-logo-image_2290314.jpg">Vacations Co</h1>
+            </div>
         </div>
+
+        <div class="main-content">
+            <div class="website-description">
+                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+
+            <form action="" method="post">
+                <h3>Let's Do This</h3>
+                <fieldset>
+                    <p class="first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                    </p>
+                    
+                    <p class="last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                    </p>
+                    <p class="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="john.doe@email.com" required>
+                    </p>
+                    <p class="phone-number">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="123-456-7890">
+                    </p>
+                    <p class="password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </p>
+                    <p class="confirm-password">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </p>
+                </fieldset>
+                <p class="button">
+                    <button id="submit-btn"type="submit">Submit</button>
+                </p>
+            </form>
+            <div class="submit-section">
+                    <p>Already have an account?<a href=""> Log in</a></p>
+            </div>
+
+            
+        </div>
+
     </div>
+
 </body>
 </html>
