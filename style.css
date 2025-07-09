@@ -1,11 +1,24 @@
+:root {
+    --bg-color: #FDFBF6;
+    --text-color: #333333;
+    --accent-primary: #00A6A6;
+    --accent-secondary: #F26419;
+    --form-bg: #FFFFFF;
+    --logo-overlay: rgba(45, 45, 45, 0.7);
+    --success-color: #00A6A6;
+    --error-color: #F26419;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .container {
     display: flex;
-    background-color: aliceblue
 }
 
 /* side bar */
@@ -13,30 +26,30 @@ body {
 .side-bar {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 35%;
 }
 
 .background-image {
-    width: 45%;
+    width: 35%;
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.logo-image {
-    background-color: transparent;
-    width: 50px;
-    height: auto;
-}
+
 
 .logo {
     width: 100%;
-    background-color: lightblue;
-    opacity: 70%;
+    background-color: var(--logo-overlay);
     position: relative;
     top: 200px;
     text-align: center;
+    color: white;
+}
+
+h1, h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -45,21 +58,23 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    width: 55%;
-    height: 100vh;
+    width: 65%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .website-description {
-    background-color: aliceblue;
     padding: 10px;
     text-align: center;
+    font-size: 26px;
 }
 
 form {
-    background-color: lightblue;
+    background-color: var(--form-bg);
     padding: 1em;
-    border: 1px solid #ccc;
     border-radius: 1em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -92,22 +107,45 @@ fieldset p {
 }
 
 #submit-btn:hover {
-    background-color: green;
+    background-color: var(--accent-primary);
     color: white;
     cursor: pointer;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.15s ease;
 }
 
 #submit-btn:active {
     transform: translateY(2px);
-    box-shadow: 2px 2px 5px black;
-    background-color: darkgreen;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--accent-secondary);
+}
+
+input {
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 1.5px solid #ccc;
+}
+
+input:valid {
+    border-color: var(--success-color);
+}
+
+input:invalid {
+    border-color: var(--error-color);
 }
 
 
 .submit-section {
     display: flex;
     justify-content: center;
-    background-color: aliceblue;
+}
+
+.submit-section a {
+    color: var(--accent-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.submit-section a:hover {
+    text-decoration: underline;
 }
